@@ -14,17 +14,54 @@
 */
 
 /* Table Styles */
-
-
+table {
+    background: linear-gradient(rgb(190, 215, 255) ,black);
+    border: 5px solid gray;
+}
+/* Edited everything that i made in html */
+th, td {
+    border: 3px solid gray;
+    height: 1.4em;
+    padding: 8px;
+}
+/* edited every header & data cell */
+th {
+    background-color: black;
+    color: rgb(130, 210, 255);
+    font-weight: normal;
+}
+/* only edited the header cells */
+td {
+    color: white;
+    font-size: 0.9em;
+    vertical-align: top;
+}
+/* only edited the data cells */
 
 /* Column Styles */
-
-
+Col#firstCol {
+    column-width: 24%;
+}
+/* Edited the first column on the graph */
+Col.dataCols {
+    column-width: 19%;
+}
+/* edited all the data columns on the graph */
 
 /* Table Header Styles */
-
-
-
+thead tr {
+    height: 60px;
+}
+/* Edited every th and td cell because theyre all in tr cells */
+thead tr:first-of-type th:first-of-type {
+    font-size: 2em;
+}
+/* This has first of type to indicate this is the beginning */
+thead tr:first-of-type th:not(:first-of-type) {
+    background: transparent;
+    color: black;
+}
+/* This has "not" before first of type so you know its after */
 
 
 
